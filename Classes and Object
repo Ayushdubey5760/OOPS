@@ -1,0 +1,25 @@
+class Person {
+    String name;
+    int age;
+
+    void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person1 = new Person();
+
+        person1.name = "John Doe";
+        person1.age = 30;
+
+        Person person2 = new Person();
+
+        person2.name = "Jane Doe";
+        person2.age = 25;
+
+        person1.displayInfo();
+        person2.displayInfo();
+    }
+}
