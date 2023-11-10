@@ -1,0 +1,42 @@
+import java.util.Set;
+import java.util.Vector;
+import java.util.LinkedList;
+import java.util.HashSet;
+
+public class CollectionFrameworkEx {
+    public static void main(String[] args) {
+        // Set Example (HashSet)
+        Set<String> uniqueColors = new HashSet<>();
+        uniqueColors.add("Red");
+        uniqueColors.add("Green");
+        uniqueColors.add("Blue");
+        uniqueColors.add("Red"); 
+
+        System.out.println("Colors in the Set:");
+        for (String color : uniqueColors) {
+            System.out.println(color);
+        }
+
+        // Queue Example (LinkedList)
+        LinkedList<String> queue = new LinkedList<>();
+        queue.add("A");
+        queue.add("B");
+        queue.add("C");
+
+        System.out.println("\nPeople in the Queue:");
+        while (!queue.isEmpty()) {
+            System.out.println(queue.poll());
+        }
+
+        // Vector Example
+        Vector<Integer> numbers = new Vector<>();
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+
+        System.out.println("\nNumbers in the Vector:");
+        for (int number : numbers) {
+            System.out.println(number);
+        }
+    }
+}
