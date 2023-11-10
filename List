@@ -3,14 +3,14 @@ import java.util.List;
 
 public class SimpleCollectionExample {
     public static void main(String[] args) {
-        // Create a List to store names
+        // store the names
         List<String> namesList = new ArrayList<>();
 
-        // Add names to the list
-        namesList.add("Alice");
-        namesList.add("Bob");
-        namesList.add("Charlie");
-        namesList.add("David");
+        // Add names
+        namesList.add("A");
+        namesList.add("B");
+        namesList.add("C");
+        namesList.add("D");
 
         // Display the contents of the list
         System.out.println("Names in the list:");
@@ -19,19 +19,15 @@ public class SimpleCollectionExample {
         }
 
         // Check if a specific name is in the list
-        String searchName = "Bob";
+        String searchName = "B";
         if (namesList.contains(searchName)) {
             System.out.println(searchName + " is in the list.");
         } else {
             System.out.println(searchName + " is not in the list.");
         }
 
-        // Remove a name from the list
-        String removeName = "Charlie";
-        namesList.remove(removeName);
-
         // Display the updated list
-        System.out.println("\nUpdated names in the list:");
+        System.out.println("\Updated names in the list:");
         for (String name : namesList) {
             System.out.println(name);
         }
